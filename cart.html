@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Cart | BookStore</title>
+    <title>Cart | SimpleBookStore</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="/assets/icon.ico">
 </head>
@@ -10,16 +10,44 @@
 <body>
     <!-- NAVBAR -->
     <ul>
-        <li> <a class="sitename">BookStore</a> </li>
-        <li > <a  href="/index.html">Home</a> </li>
-        <li> <a href="/catalog.html">Books Catalog</a> </li>
-        <li style="float: right"> <a class="active" href="/cart.html">Cart</a> </li>
-        <li style="float: right"> <a href="/auth.html">Login / Signup</a> </li>
-        <li style="float: right"> <a href="/profile.html" >My Profile</a> </li>
+        <li> <a class="sitename">SimpleBookStore</a> </li>
+        <li > <a  href="index.html">Home</a> </li>
+        <li> <a href="catalog.html">Books Catalog</a> </li>
+        <li style="float: right"> <a class="active" href="cart.html">Cart</a> </li>
+        <li style="float: right"> <a href="auth.html">Login / Signup</a> </li>
+        <li style="float: right"> <a href="profile.html" >My Profile</a> </li>
         
     </ul>
 
     <!-- CONTENT -->
+
+    <div class="cart-container">
+        <h1>Shopping Cart</h1>
+        <div class="cart-items">
+            <div class="cart-item">
+                <img src="assets/book1.webp" alt="Book">
+                <div class="item-details">
+                    <h3>Book called Dark</h3>
+                    <p class="price">USD 10</p>
+                    <p>In Stock</p>
+                    <button>Delete</button>
+                </div>
+            </div>
+            <div class="cart-item">
+                <img src="assets/book3.webp" alt="Book">
+                <div class="item-details">
+                    <h3>Book 3</h3>
+                    <p class="price">USD 15</p>
+                    <p>In Stock</p>
+                    <button>Delete</button>
+                </div>
+            </div>
+        </div>
+        <div class="cart-summary">
+            <h3>Subtotal (2 items): USD 25</h3>
+            <button><a href="/payment.html">Proceed to Checkout</a></button>
+        </div>
+    </div>
 
 </body>
 

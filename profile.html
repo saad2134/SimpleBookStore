@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>My Profile | BookStore</title>
+    <title>My Profile | SimpleBookStore</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="/assets/icon.ico">
     
@@ -12,12 +12,12 @@
 <body>
     <!-- NAVBAR -->
     <ul>
-        <li> <a class="sitename">BookStore</a> </li>
-        <li > <a href="/index.html">Home</a> </li>
-        <li> <a href="/catalog.html">Books Catalog</a> </li>
-        <li style="float: right"> <a href="/cart.html">Cart</a> </li>
-        <li style="float: right"> <a  href="/auth.html">Login / Signup</a> </li>
-        <li style="float: right"> <a class="active" href="/profile.html" >My Profile</a> </li>
+        <li> <a class="sitename">SimpleBookStore</a> </li>
+        <li > <a href="index.html">Home</a> </li>
+        <li> <a href="catalog.html">Books Catalog</a> </li>
+        <li style="float: right"> <a href="cart.html">Cart</a> </li>
+        <li style="float: right"> <a  href="auth.html">Login / Signup</a> </li>
+        <li style="float: right"> <a class="active" href="profile.html" >My Profile</a> </li>
         
     </ul>
 
@@ -26,8 +26,29 @@
     <div class="profile-page-content">
         <h1>My Profile</h1>
         <div class="profile-details-card">
+            <h2>Account Details</h2>
+            <div class="profile-field">
+                <label>Name:</label>
+                <span>John Doe</span>
+            </div>
+            <div class="profile-field">
+                <label>Email:</label>
+                <span>john.doe@example.com</span>
+            </div>
+            <div class="profile-field">
+                <label>Phone:</label>
+                <span>+1 234 567 8900</span>
+            </div>
+            <div class="profile-field">
+                <label>Address:</label>
+                <span>123 Main Street, City, State 12345</span>
+            </div>
             <button>Edit Profile</button>
-            
+        </div>
+        
+        <div class="profile-details-card">
+            <h2>Order History</h2>
+            <p>No orders yet.</p>
         </div>
     </div>
 

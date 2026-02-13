@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Books Catalog | BookStore</title>
+    <title>Books Catalog | SimpleBookStore</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="/assets/icon.ico">
 </head>
@@ -10,20 +10,52 @@
 <body>
     <!-- NAVBAR -->
     <ul>
-        <li> <a class="sitename">BookStore</a> </li>
-        <li> <a href="/index.html">Home</a> </li>
-        <li> <a class="active" href="/catalog.html">Books Catalog</a> </li>
-        <li style="float: right"> <a href="/cart.html">Cart</a> </li>
-        <li style="float: right"> <a href="/auth.html">Login / Signup</a> </li>
-        <li style="float: right"> <a href="/profile.html">My Profile</a> </li>
+        <li> <a class="sitename">SimpleBookStore</a> </li>
+        <li> <a href="index.html">Home</a> </li>
+        <li> <a class="active" href="catalog.html">Books Catalog</a> </li>
+        <li style="float: right"> <a href="cart.html">Cart</a> </li>
+        <li style="float: right"> <a href="auth.html">Login / Signup</a> </li>
+        <li style="float: right"> <a href="profile.html">My Profile</a> </li>
 
     </ul>
 
     <!-- CONTENT -->
 
-    <div class="all-books">
-        <h2>Browsing All Books</h2>
-        <div class="book-container">
+    <div class="catalog-layout">
+        <!-- Left Sidebar - Filters (20%) -->
+        <div class="catalog-sidebar">
+            <h3>Browse Categories</h3>
+            
+            <div class="filter-section">
+                <h4>Categories</h4>
+                <label><input type="checkbox"> Fiction</label>
+                <label><input type="checkbox"> Non-Fiction</label>
+                <label><input type="checkbox"> Science</label>
+                <label><input type="checkbox"> History</label>
+                <label><input type="checkbox"> Biography</label>
+                <label><input type="checkbox"> Children's</label>
+            </div>
+            
+            <div class="filter-section">
+                <h4>Price Range</h4>
+                <label><input type="checkbox"> Under $10</label>
+                <label><input type="checkbox"> $10 - $20</label>
+                <label><input type="checkbox"> $20 - $30</label>
+                <label><input type="checkbox"> Over $30</label>
+            </div>
+            
+            <div class="filter-section">
+                <h4>Rating</h4>
+                <label><input type="checkbox"> 4 Stars & Up</label>
+                <label><input type="checkbox"> 3 Stars & Up</label>
+                <label><input type="checkbox"> 2 Stars & Up</label>
+            </div>
+        </div>
+        
+        <!-- Right Side - Books List (80%) -->
+        <div class="catalog-main">
+            <h2>Browsing All Books</h2>
+            <div class="book-container">
             <div class="book-card">
                 <img src="assets/book1.webp">
                 <a href="#">Book called Dark</a>
@@ -125,6 +157,7 @@
                 <a href="#">Book 17</a>
                 <a class="price">USD 25</a>
                 <button>Add to Cart</button>
+            </div>
             </div>
         </div>
     </div>

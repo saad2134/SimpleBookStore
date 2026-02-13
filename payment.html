@@ -1,10 +1,59 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title></title>
-        <link rel="stylesheet" src="styles.css">
-    </head>
-    <body>
+
+<head>
+    <title>Payment | SimpleBookStore</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="/assets/icon.ico">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <ul>
+        <li> <a class="sitename">SimpleBookStore</a> </li>
+        <li> <a href="index.html">Home</a> </li>
+        <li> <a href="catalog.html">Books Catalog</a> </li>
+        <li style="float: right"> <a class="active" href="cart.html">Cart</a> </li>
+        <li style="float: right"> <a href="auth.html">Login / Signup</a> </li>
+        <li style="float: right"> <a href="profile.html" >My Profile</a> </li>
         
-    </body>
+    </ul>
+
+    <!-- CONTENT -->
+
+    <div class="payment-container">
+        <h1>Payment Details</h1>
+        
+        <div class="order-summary">
+            <h2>Order Summary</h2>
+            <p>Items (2): USD 25</p>
+            <p>Shipping: USD 5</p>
+            <h3>Total: USD 30</h3>
+        </div>
+
+        <div class="payment-form">
+            <h2>Credit Card Payment</h2>
+            <form id="paymentForm">
+                <label>Card Number</label>
+                <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" required>
+                
+                <label>Name on Card</label>
+                <input type="text" id="cardName" required>
+                
+                <label>Expiry Date</label>
+                <input type="text" id="cardExpiry" placeholder="MM/YY" required>
+                
+                <label>CVV</label>
+                <input type="text" id="cardCVV" placeholder="123" required>
+                
+                <label>Billing Address</label>
+                <input type="text" id="billingAddress" required>
+                
+                <button> <a href="order_confirmation.html"> Place Order </a></button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
 </html>

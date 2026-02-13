@@ -1,5 +1,6 @@
 
 body {
+    margin: 0;
     padding-top: 1.5%;
 }
 
@@ -47,21 +48,23 @@ ul li a.active {
 
 .hero {
     background-image: url('assets/hero-cover.jpg');
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 10%;
+    padding-bottom: 10%;
     justify-content: center;
     align-items: center;
     display: grid;
 }
 
-.hero h1, h3, a {
+.hero h1, .hero h3, .hero a {
     color: white;
     text-align: center;
 }
 
 .hero button {
     background-color: #f83c4f;
-    padding: 1%;
+    padding: 10px 25px;
+    max-width: 200px;
+    margin: 0 auto;
 }
 
 
@@ -73,6 +76,50 @@ ul li a.active {
 
 .featured h2 {
     margin-bottom: 30px;
+}
+
+/* --------------------------------------------------------------------------------------- */
+
+/* Catalog Page Layout (20:80 split) */
+
+.catalog-layout {
+    display: flex;
+    padding: 40px 5%;
+    gap: 20px;
+}
+
+.catalog-sidebar {
+    width: 20%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background: #fff;
+    height: fit-content;
+    position: sticky;
+    top: 60px;
+}
+
+.catalog-sidebar h3 {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.filter-section {
+    margin-bottom: 20px;
+}
+
+.filter-section h4 {
+    margin-bottom: 10px;
+}
+
+.filter-section label {
+    display: block;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.catalog-main {
+    width: 80%;
 }
 
 /* --------------------------------------------------------------------------------------- */
@@ -89,7 +136,7 @@ ul li a.active {
 
 .book-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     gap: 15px;
     justify-items: center;
 }
@@ -134,4 +181,306 @@ ul li a.active {
 
 .book-card button:hover {
     background: #444;
+}
+
+/* --------------------------------------------------------------------------------------- */
+
+/* AUTH PAGE STYLING (Login & Registration) */
+
+.auth-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+}
+
+.auth-box {
+    border: 1px solid #ddd;
+    padding: 30px;
+    width: 300px;
+    background: #fff;
+}
+
+.auth-box h2 {
+    margin-bottom: 20px;
+}
+
+.auth-box label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.auth-box input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #a6a6a6;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.auth-box button {
+    width: 100%;
+    padding: 8px;
+    background: #f0c14b;
+    border: 1px solid #a6a6a6;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.auth-box button:hover {
+    background: #f7d86c;
+}
+
+.auth-box p {
+    font-size: 12px;
+    color: #555;
+}
+
+/* --------------------------------------------------------------------------------------- */
+
+/* PROFILE PAGE STYLING */
+
+.profile-page-content {
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.profile-page-content h1 {
+    margin-bottom: 30px;
+}
+
+.profile-details-card {
+    border: 1px solid #ddd;
+    padding: 25px;
+    margin-bottom: 20px;
+    background: #fff;
+}
+
+.profile-details-card h2 {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.profile-field {
+    margin-bottom: 15px;
+}
+
+.profile-field label {
+    font-weight: bold;
+    display: inline-block;
+    width: 120px;
+}
+
+.profile-details-card button {
+    padding: 8px 20px;
+    background: #f0c14b;
+    border: 1px solid #a6a6a6;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+/* --------------------------------------------------------------------------------------- */
+
+/* CART PAGE STYLING */
+
+.cart-container {
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.cart-container h1 {
+    margin-bottom: 30px;
+}
+
+.cart-items {
+    border: 1px solid #ddd;
+    padding: 20px;
+    background: #fff;
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    display: flex;
+    gap: 20px;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.cart-item img {
+    width: 80px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.item-details h3 {
+    margin: 0 0 10px 0;
+}
+
+.item-details .price {
+    font-weight: bold;
+    color: #B12704;
+}
+
+.item-details button {
+    padding: 5px 10px;
+    background: #eee;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.cart-summary {
+    border: 1px solid #ddd;
+    padding: 20px;
+    background: #fff;
+    text-align: right;
+}
+
+.cart-summary button {
+    padding: 10px 30px;
+    background: #f0c14b;
+    border: 1px solid #a6a6a6;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.cart-summary button a {
+    color: black;
+    text-decoration: none;
+}
+
+/* --------------------------------------------------------------------------------------- */
+
+/* PAYMENT PAGE STYLING */
+
+.payment-container {
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.payment-container h1 {
+    margin-bottom: 30px;
+}
+
+.order-summary {
+    border: 1px solid #ddd;
+    padding: 20px;
+    background: #fff;
+    margin-bottom: 20px;
+}
+
+.order-summary h2 {
+    margin-bottom: 15px;
+}
+
+.order-summary h3 {
+    margin-top: 15px;
+    color: #B12704;
+}
+
+.payment-form {
+    border: 1px solid #ddd;
+    padding: 25px;
+    background: #fff;
+}
+
+.payment-form h2 {
+    margin-bottom: 20px;
+}
+
+.payment-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.payment-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #a6a6a6;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.payment-form button {
+    width: 100%;
+    padding: 12px;
+    background: #f0c14b;
+    border: 1px solid #a6a6a6;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.payment-form button:hover {
+    background: #f7d86c;
+}
+
+/* --------------------------------------------------------------------------------------- */
+
+/* ORDER CONFIRMATION PAGE STYLING */
+
+.confirmation-container {
+    padding: 50px 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.confirmation-container h1 {
+    color: #007600;
+    margin-bottom: 30px;
+}
+
+.confirmation-details {
+    border: 1px solid #ddd;
+    padding: 30px;
+    background: #fff;
+}
+
+.confirmation-details h2 {
+    margin-bottom: 20px;
+}
+
+.order-info {
+    border: 1px solid #eee;
+    padding: 15px;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.order-info h3 {
+    margin-top: 10px;
+    color: #B12704;
+}
+
+.confirmation-details button {
+    padding: 10px 30px;
+    background: #f0c14b;
+    border: 1px solid #a6a6a6;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.confirmation-details button a {
+    color: black;
+    text-decoration: none;
 }
