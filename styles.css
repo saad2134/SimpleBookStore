@@ -1,0 +1,137 @@
+
+body {
+    padding-top: 1.5%;
+}
+
+/* NAVBAR STYLING */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a.sitename {
+    font-style: italic;
+    font-weight: 900;
+}
+
+ul li a:hover:not(.active):not(.sitename) {
+  background-color: #111;
+}
+
+ul li a.active {
+  background-color: #f83c4f;
+}
+
+/* --------------------------------------------------------------------------------------- */
+
+/* HERO STYLING */
+
+.hero {
+    background-image: url('assets/hero-cover.jpg');
+    padding-top: 5%;
+    padding-bottom: 5%;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+}
+
+.hero h1, h3, a {
+    color: white;
+    text-align: center;
+}
+
+.hero button {
+    background-color: #f83c4f;
+    padding: 1%;
+}
+
+
+/* Featured Books Secion Styling*/
+
+.featured {
+    padding: 40px 5%;
+}
+
+.featured h2 {
+    margin-bottom: 30px;
+}
+
+/* --------------------------------------------------------------------------------------- */
+
+/* All Books Page Styling*/
+
+.all-books {
+    padding: 40px 5%;
+}
+
+/* --------------------------------------------------------------------------------------- */
+
+/* Books List Styling*/
+
+.book-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    justify-items: center;
+}
+
+.book-card {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    transition: 0.3s ease;
+    background: #fff;
+}
+
+.book-card img {
+    width: 135px;
+    height: 240px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border-radius: 3%;
+}
+
+.book-card a {
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.price {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.book-card button {
+    padding: 8px 15px;
+    border: none;
+    background: #111;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.book-card button:hover {
+    background: #444;
+}
