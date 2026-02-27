@@ -5,7 +5,7 @@
     <title>My Profile | SimpleBookStore</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="/assets/icon.ico">
-    
+    <script src="js/profile.js"></script>
 
 </head>
 
@@ -13,19 +13,19 @@
     <!-- NAVBAR -->
     <ul>
         <li> <a class="sitename">SimpleBookStore</a> </li>
-        <li > <a href="index.html">Home</a> </li>
+        <li> <a href="index.html">Home</a> </li>
         <li> <a href="catalog.html">Books Catalog</a> </li>
         <li style="float: right"> <a href="cart.html">Cart</a> </li>
-        <li style="float: right"> <a  href="auth.html">Login / Signup</a> </li>
-        <li style="float: right"> <a class="active" href="profile.html" >My Profile</a> </li>
-        
+        <li style="float: right"> <a href="auth.html">Login / Signup</a> </li>
+        <li style="float: right"> <a class="active" href="profile.html">My Profile</a> </li>
+
     </ul>
 
     <!-- CONTENT -->
 
     <div class="profile-page-content">
         <h1>My Profile</h1>
-        <div class="profile-details-card">
+        <div class="profile-details-card" id="profile-details-card" style="display: block;">
             <h2>Account Details</h2>
             <div class="profile-field">
                 <label>Name:</label>
@@ -33,19 +33,49 @@
             </div>
             <div class="profile-field">
                 <label>Email:</label>
-                <span>john.doe@example.com</span>
+                <span>me@example.com</span>
             </div>
             <div class="profile-field">
                 <label>Phone:</label>
-                <span>+1 234 567 8900</span>
+                <span>+91 98765 43210</span>
             </div>
             <div class="profile-field">
                 <label>Address:</label>
-                <span>123 Main Street, City, State 12345</span>
+                <span>1-2-3/A, Abc Locality, Abc City, Abc State, Abc Country, ZIP/PIN Code</span>
             </div>
-            <button>Edit Profile</button>
+            <button onclick="editProfile1()">Edit Profile</button>
         </div>
-        
+
+        <div class="profile-edit-card" id="profile-edit-card" style="display: none;">
+            <div class="profile-box">
+            <h2>Edit Account Details</h2>
+            <form id="profileeditForm">
+                <label>Your Name *</label>
+                <input type="text" id="profileName" placeholder="John Doe" required>
+
+                <label>Email *</label>
+                <input type="email" id="profileEmail" placeholder="me@example.com" required>
+
+                <label>Mobile Phone Number *</label>
+                <input type="tel" id="profilePhone" placeholder="+91 98765 43210" required>
+
+                <label>Address *</label>
+                <input type="text" id="profileAddress" placeholder="1-2-3/A, Abc Locality, Abc City, Abc State, Abc Country, ZIP/PIN Code" required>
+
+                <label>Password *</label>
+                <input type="password" id="profilePassword" placeholder="At least 6 characters." required>
+
+                <label>Confirm Password *</label>
+                <input type="password" id="profileCPassword" placeholder="Must match password." required>
+
+                <button type="submit" onclick="editProfile2()" style="margin-bottom: 0%;">Update Profile</button>
+    
+            </form>
+            <button onclick="editProfileCancel()" style="background-color: #eeeeee; color: red;">Cancel</button>
+            </div>
+        </div>
+
+
         <div class="profile-details-card">
             <h2>Order History</h2>
             <p>No orders yet.</p>

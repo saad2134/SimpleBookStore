@@ -267,6 +267,12 @@ ul li a.active {
     padding-bottom: 10px;
 }
 
+.profile-edit-card h2 {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
 .profile-field {
     margin-bottom: 15px;
 }
@@ -284,6 +290,68 @@ ul li a.active {
     border-radius: 3px;
     cursor: pointer;
     margin-top: 15px;
+}
+
+.profile-edit-card button {
+    padding: 8px 20px;
+    background: #f0c14b;
+    border: 1px solid #a6a6a6;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+}
+
+.profile-box {
+    border: 1px solid #ddd;
+    padding: 30px;
+    margin-bottom: 2vw;
+    background: #fff;
+}
+
+.profile-box h2 {
+    margin-bottom: 20px;
+}
+
+.profile-box label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.profile-box input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #a6a6a6;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.profile-box button {
+    width: 100%;
+    padding: 8px;
+    background: #f0c14b;
+    border: 1px solid #a6a6a6;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.profile-box button:hover {
+    background: #f7d86c;
+}
+
+.profile-box p {
+    font-size: 12px;
+    color: #555;
 }
 
 /* --------------------------------------------------------------------------------------- */
